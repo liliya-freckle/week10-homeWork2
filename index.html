@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="gallery">
+        <img src="./assets/1.jpg" alt="Изображение1" id="galleryImage" />
+        <button id="prevButton">Назад</button>
+        <button id="nextButton">Вперед</button>
+    </div>
+
+
+
+    <script>
+        const image1 = "./assets/1.jpg";
+        const image2 = "./assets/2.jpg";
+
+        const galleryImage = document.getElementById("galleryImage");
+        const prevImage = document.getElementById("prevButton");
+        const nextImage = document.getElementById("nextButton");
+
+        function changeImage(image) {
+            galleryImage.src = image;
+        }
+
+        nextButton.addEventListener("click", () => {
+            changeImage(image1);
+        });
+
+        prevButton.addEventListener("click", () => {
+            changeImage(image2);
+        });
+
+
+
+    </script>
+</body>
+
+</html>
